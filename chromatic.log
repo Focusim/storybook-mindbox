@@ -1,0 +1,117 @@
+
+Chromatic CLI v7.5.4
+https://www.chromatic.com/docs/cli
+
+Authenticating with Chromatic
+    → Connecting to https://index.chromatic.com
+Authenticated with Chromatic
+    → Using project token '****************4de7'
+Retrieving git information
+✖ Found only one commit
+This typically means you have ran into one of the following scenarios:
+- You've checked out a shallow copy of the Git repository, which some CI systems do by default.
+  In order for Chromatic to correctly determine baseline commits, we need access to the full Git history graph.
+  Refer to your CI provider's documentation for details.
+- You've only made a single commit so far.  
+  Please make at least one additional commit in order for Chromatic to be able to detect what's changed.
+Retrieved git information
+    → Commit 'f64a0a5' on branch 'MBL-670'; found 1 parent build
+Collecting Storybook metadata
+Collected Storybook metadata
+    → Storybook 7.0.6 for Vue3; using the @storybook/vue3-vite builder (7.0.6); supported addons found: Links, Essentials, Interactions
+Initializing build
+Initialized build
+    → Build 3 initialized
+Building your Storybook
+    → Running command: yarn run build-storybook --output-dir /tmp/chromatic--15617-WveiH0aId3Th
+Storybook built in 11 seconds
+    → View build log at /var/www/StoryBook-mindbox/build-storybook.log
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Retrieving target location
+    → Starting publish
+    → [                    ] 0%
+    → [                    ] 1%
+    → [                    ] 2%
+    → [=                   ] 3%
+    → [=                   ] 4%
+    → [=                   ] 5%
+    → [=                   ] 7%
+    → [==                  ] 8%
+    → [==                  ] 9%
+    → [==                  ] 10%
+    → [==                  ] 12%
+    → [===                 ] 13%
+    → [===                 ] 14%
+    → [===                 ] 16%
+    → [===                 ] 17%
+    → [====                ] 18%
+    → [====                ] 21%
+    → [=====               ] 23%
+    → [=====               ] 24%
+    → [=====               ] 27%
+    → [======              ] 32%
+    → [=======             ] 34%
+    → [=======             ] 37%
+    → [========            ] 40%
+    → [========            ] 41%
+    → [=========           ] 46%
+    → [=========           ] 47%
+    → [==========          ] 48%
+    → [==========          ] 49%
+    → [==========          ] 50%
+    → [==========          ] 51%
+    → [==========          ] 52%
+    → [===========         ] 53%
+    → [===========         ] 54%
+    → [===========         ] 55%
+    → [============        ] 59%
+    → [============        ] 60%
+    → [============        ] 61%
+    → [============        ] 62%
+    → [=============       ] 64%
+    → [=============       ] 67%
+    → [==============      ] 72%
+    → [===============     ] 73%
+    → [===============     ] 74%
+    → [===============     ] 75%
+    → [===============     ] 76%
+    → [===============     ] 77%
+    → [================    ] 78%
+    → [================    ] 79%
+    → [================    ] 81%
+    → [=================   ] 83%
+    → [=================   ] 84%
+    → [=================   ] 85%
+    → [=================   ] 87%
+    → [==================  ] 89%
+    → [==================  ] 90%
+    → [==================  ] 91%
+    → [==================  ] 92%
+    → [=================== ] 93%
+    → [=================== ] 96%
+    → [====================] 99%
+    → [====================] 100%
+Publish complete in 18 seconds
+    → View your Storybook at https://652eb62ce9f67aaef253f343-cbywjjviqy.chromatic.com
+Verifying your Storybook
+    → This may take a few minutes
+Started build 3
+    → View build details at https://www.chromatic.com/build?appId=652eb62ce9f67aaef253f343&number=3
+Running 11 tests
+    → This may take a few minutes
+ℹ Speed up Continuous Integration
+Your project is linked to GitHub so Chromatic will report results there.
+This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
+Read more here: https://www.chromatic.com/docs/cli#chromatic-options
+    → [==                  ] 1/11  Task › Default 
+    → [====                ] 2/11  Task › Pinned 
+    → [=======             ] 4/11  Button › Primary 
+    → [=============       ] 7/11  Button › Small 
+    → [===============     ] 8/11  Header › Logged In 
+    → [================    ] 9/11  Header › Logged Out 
+    → [====================] 11/11  Page › Logged In 
+✔ Build 3 passed!
+No visual changes were found in this build.
+ℹ View build details at https://www.chromatic.com/build?appId=652eb62ce9f67aaef253f343&number=3
