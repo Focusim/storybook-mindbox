@@ -19,7 +19,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_5b9777bdf9b4de7"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.2",
@@ -40,5 +41,7 @@
   },
   "peerDependencies": {
     "vue": ">=3"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "story-book-mindbox-site@0.0.3"
 }
