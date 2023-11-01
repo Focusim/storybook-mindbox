@@ -1,58 +1,44 @@
 {
-  "name": "story-book-mindbox-site",
-  "version": "0.0.1",
-  "private": false,
-  "description": "Starter template to get up and running quickly with Vue and Storybook",
-  "author": {
-    "name": "Chromatic",
-    "email": "https://chromatic.com/"
+  "name": "storybook-mindbox-site",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "./dist/dragonekui.umd.ts",
+  "module": "./dist/dragonekui.es.ts",
+  "types": "./dist/components/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/dragonekui.es.ts",
+      "require": "./dist/dragonekui.umd.ts"
+    },
+    "./styles": "./dist/style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chromaui/intro-storybook-vue-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/chromaui/intro-storybook-vue-template/issues"
-  },
-  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
+    "build": "vue-tsc && vite build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "init-msw": "msw init public/",
-    "chromatic": "npx chromatic --project-token=chpt_5b9777bdf9b4de7"
-  },
-  "dependencies": {
-    "vue": "^3.2.47"
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.2.0",
-    "@storybook/addon-essentials": "^7.0.6",
-    "@storybook/addon-interactions": "^7.0.6",
-    "@storybook/addon-links": "^7.0.6",
-    "@storybook/blocks": "^7.0.6",
-    "@storybook/testing-library": "^0.0.14-next.2",
-    "@storybook/vue3": "^7.0.6",
-    "@storybook/vue3-vite": "^7.0.6",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/eslint-config-prettier": "^7.1.0",
-    "chromatic": "^7.5.4",
-    "eslint": "^8.34.0",
-    "eslint-plugin-storybook": "^0.6.11",
-    "eslint-plugin-vue": "^9.9.0",
-    "msw": "^1.2.1",
-    "msw-storybook-addon": "^1.8.0",
-    "prettier": "^2.8.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.0.6",
-    "vite": "^4.1.4"
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/testing-library": "^0.2.1",
+    "@storybook/vue3": "^7.4.2",
+    "@storybook/vue3-vite": "^7.4.2",
+    "@types/node": "^20.6.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "storybook": "^7.4.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.3",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.5"
   },
-  "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/chromaui/intro-storybook-vue-template#readme",
-  "_id": "intro-storybook-vue-template@0.2.0"
+  "peerDependencies": {
+    "vue": ">=3"
+  }
 }
